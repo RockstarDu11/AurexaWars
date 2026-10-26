@@ -1,0 +1,13 @@
+name: AurexaWars
+main: fr.aurexalium.aurexawars.AurexaWars
+version: 1.0.0
+author: Aurexalium
+description: SkyWars pour Aurexalium
+commands:
+  skywars:
+    description: Commande principale AurexaWars
+    aliases: [sw, aw, wars]
+permissions:
+  aurexawars.admin:
+    description: Configurer les arenes AurexaWars
+    default: op

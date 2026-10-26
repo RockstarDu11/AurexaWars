@@ -1,0 +1,82 @@
+# AurexaWars - configuration
+prefix: "&6&lAurexalium &c&l>> &e"
+
+# Decompte (en secondes) avant le debut quand assez de joueurs sont la
+start-countdown: 20
+
+# Temps (en secondes) ou les joueurs sont immobiles sur leur ile avant le debut
+freeze-seconds: 5
+
+# Remplissage des coffres : X secondes apres le debut (0 = jamais)
+refill-time: 180
+
+# Duree maximale d'une partie en secondes (0 = illimitee).
+# Si le temps est ecoule, celui qui a le plus de kills gagne.
+max-time: 900
+
+# Commande console pour donner des points (PlayerPoints) : {player} / {amount}
+coins-command: "points give {player} {amount}"
+
+# Commande lancee pour chaque joueur qui sort d'une partie (Skript invreset.sk).
+# Laisse vide pour desactiver.
+end-command: "invreset {player}"
+
+# Points donnes uniquement a la fin de la partie
+coins:
+  win: 100            # le gagnant
+  second: 40          # le dernier elimine avant le gagnant
+  participation: 10   # tous les autres
+
+# Coffres : tous les coffres de la zone de jeu sont remplis au debut.
+# Ceux a moins de mid-radius blocs du centre (/sw setcenter) sont des coffres "mid" (meilleur loot).
+chests:
+  normal-min: 3
+  normal-max: 6
+  mid-min: 5
+  mid-max: 9
+  mid-radius: 15
+
+# Contenu des coffres. Format : "MATERIAL quantite-min quantite-max poids"
+# Plus le poids est grand, plus l'objet est frequent.
+loot:
+  normal:
+    - "WOOD 12 32 10"
+    - "COBBLESTONE 16 32 10"
+    - "STONE_SWORD 1 1 8"
+    - "WOOD_AXE 1 1 4"
+    - "IRON_SWORD 1 1 3"
+    - "LEATHER_HELMET 1 1 6"
+    - "LEATHER_CHESTPLATE 1 1 5"
+    - "LEATHER_LEGGINGS 1 1 5"
+    - "LEATHER_BOOTS 1 1 6"
+    - "CHAINMAIL_CHESTPLATE 1 1 2"
+    - "IRON_HELMET 1 1 2"
+    - "GOLD_CHESTPLATE 1 1 3"
+    - "BOW 1 1 3"
+    - "ARROW 8 16 5"
+    - "COOKED_BEEF 3 8 8"
+    - "BREAD 3 6 6"
+    - "SNOW_BALL 8 16 4"
+    - "EGG 8 16 3"
+    - "STONE_PICKAXE 1 1 4"
+    - "IRON_AXE 1 1 2"
+    - "GOLDEN_APPLE 1 1 2"
+    - "FISHING_ROD 1 1 2"
+  mid:
+    - "DIAMOND_SWORD 1 1 3"
+    - "IRON_SWORD 1 1 6"
+    - "DIAMOND_HELMET 1 1 2"
+    - "DIAMOND_CHESTPLATE 1 1 1"
+    - "IRON_CHESTPLATE 1 1 4"
+    - "IRON_LEGGINGS 1 1 4"
+    - "IRON_BOOTS 1 1 4"
+    - "IRON_HELMET 1 1 4"
+    - "GOLDEN_APPLE 1 3 8"
+    - "ENDER_PEARL 1 2 4"
+    - "BOW 1 1 6"
+    - "ARROW 16 32 8"
+    - "COOKED_BEEF 8 16 8"
+    - "WOOD 32 64 8"
+    - "COBBLESTONE 32 64 8"
+    - "DIAMOND_PICKAXE 1 1 2"
+    - "IRON_AXE 1 1 4"
